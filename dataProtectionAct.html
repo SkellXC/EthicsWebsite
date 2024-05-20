@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Protection Act 1998</title>
+    <style>
+        body {
+            background: linear-gradient(0deg, #ffffff 0%, #f2d2a9 100%);
+            background-image: url('https://wallpapers.com/images/hd/paris-aesthetic-yi5146ugao47ztms.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .left {
+            text-align: left;
+            margin-left: 20px;
+            width: 100%;
+        }
+        pRed {
+            color: red;
+        }
+        .image-shadow {
+            box-shadow: 5px 5px 18px 0px #f2d2a9, 5px 5px 10px 1px #000000;
+        }
+        .animate-image {
+            animation: revealImage 2s ease-out forwards;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        }
+        @keyframes revealImage {
+            to {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+        .topLeft {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            padding: 10px;
+        }
+        .dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+            text-align: left;
+            margin-left: 200px;
+            margin-right: 200px;
+            border: 1px solid #000;
+            padding: 55px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+        }
+        .dropdown-content p {
+            margin: 5px 0;
+        }
+        .show {
+            max-height: 200px; /* Adjust as needed based on content */
+        }
+        h4 {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Protection Act 1998</h1>
+    <p>Details about the Data Protection Act 1998...</p>
+    <p class="topLeft"><a  href="eiffel-tower.html" style="font-size: 24px; color: red; text-decoration: underline;">Back</a></p>
+	<h4 onclick="toggleDropdown()"><u>Main Principles</u></h4>
+	<div id="dropdown" class="dropdown-content" onclick="toggleDropdown()">
+		Everyone responsible for developing systems that store personal data as well as those using and maintaining those systems have to follow strict rules called ‘data protection principles’.<br> They must make sure the information is:
+		<ul>
+			<li>used fairly, lawfully, and transparently</li>
+			<li>used for specified, explicit purposes</li>
+			<li>used in a way that is adequate, relevant, and limited to only what is necessary</li>
+			<li>accurate and, where necessary, kept up to date</li>
+			<li>kept for no longer than is necessary</li>
+			<li>handled in a way that ensures appropriate security, including protection against unlawful or unauthorised processing, access, loss, destruction, or damage</li>
+			
+    </div>
+	
+	<script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown");
+            dropdown.classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>
