@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Decision Making</title>
+    <style>
+        body {
+            background: linear-gradient(0deg, #ffffff 0%, #f2d2a9 100%);
+            background-image: url('https://wallpapers.com/images/hd/paris-aesthetic-yi5146ugao47ztms.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .left {
+            text-align: left;
+            margin-left: 20px;
+            width: 100%;
+        }
+        pRed {
+            color: red;
+        }
+        .image-shadow {
+            box-shadow: 5px 5px 18px 0px #f2d2a9, 5px 5px 10px 1px #000000;
+        }
+        .animate-image {
+            animation: revealImage 2s ease-out forwards;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        }
+        @keyframes revealImage {
+            to {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+        .topLeft {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            padding: 10px;
+        }
+        .dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 3s ease-out;
+            text-align: left;
+            margin: 20px auto;
+            border: 1px solid #000;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            width: 80%;
+            max-width: 800px;
+        }
+        .dropdown-content p {
+            margin: 5px 0;
+        }
+        .show {
+            max-height: 1000px; /* Adjust as needed based on content */
+        }
+        h4 {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Automated Decision Making</h1>
+    <p class="topLeft"><a href="eiffel-tower.html" style="font-size: 24px; color: red; text-decoration: underline;">Back</a></p>
+    <h4 onclick="toggleDropdown('dropdown)"><u>Main Principles</u></h4>
+    <div id="dropdown" class="dropdown-content" onclick="toggleDropdown('dropdown')">
+        <p>An automatic system is programmed to operate without a human 
+		providing inputs for each operation.</p>
+
+		<p>There are plans for 165 miles of drone superhighway that will link
+		airspace over the Midlands and the south of England. This will enable 
+		a range of activities, such as the delivery of vaccines and blood samples
+		and support for search and rescue missions, to be carried out using drones
+		piloted by computers.</p>
+		<p>
+		In a separate initiative, a team is developing a system of drones 
+		that can carry resuscitation (CPR) equipment and communication technology 
+		to heart attack patients. An ambulance will not be required to deliver the 
+		CPR equipment. Drones can navigate through available airspace, meaning that
+		they will not be caught in traffic jams, and they do not require a human pilot.
+		This initiative has the potential to increase the speed and lower the cost 
+		of every delivery of CPR equipment. If the same amount of money spent on 
+		delivering CPR equipment by ambulance over a year is spent on drone
+		deliveries, the number of drone deliveries can potentially increase too.</p>
+		<p><u><br>Impact</u></p>
+		<p>Through the introduction of remote medical deliveries, the cultural 
+		practices of a society's health service can be adapted so that remote
+		communities can be better served, health professionals can be redeployed 
+		to concentrate on other tasks, access to healthcare can be improved,
+		and life expectancy can be increased.</p>
+		<p> What ethical considerations arise from the use of CPR equipment drones? 
+		Taking a wider view, some are concerned that people who are present in this 
+		situation may not be confident with the use of the technology, or may rely
+		too heavily on the technology, or the CPR they would otherwise give while 
+		waiting for the drone could be interrupted. Therefore, introducing this sort
+		of technology could cause harm to some people.</p>
+    </div>
+	<script>
+        function toggleDropdown(dropDownID) {
+            var dropdown = document.getElementById(dropDownID);
+            dropdown.classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>
