@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Machines</title>
+    <style>
+        body {
+            background: linear-gradient(0deg, #ffffff 0%, #f2d2a9 100%);
+            background-image: url('https://wallpapers.com/images/hd/paris-aesthetic-yi5146ugao47ztms.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .left {
+            text-align: left;
+            margin-left: 20px;
+            width: 100%;
+        }
+        pRed {
+            color: red;
+        }
+        .image-shadow {
+            box-shadow: 5px 5px 18px 0px #f2d2a9, 5px 5px 10px 1px #000000;
+        }
+        .animate-image {
+            animation: revealImage 2s ease-out forwards;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        }
+        @keyframes revealImage {
+            to {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+        .topLeft {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            padding: 10px;
+        }
+        .dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 3s ease-out;
+            text-align: left;
+            margin: 20px auto;
+            border: 1px solid #000;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            width: 80%;
+            max-width: 800px;
+        }
+        .dropdown-content p {
+            margin: 5px 0;
+        }
+        .show {
+            max-height: 1000px; /* Adjust as needed based on content */
+        }
+        h4 {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Autonomous Machines</h1>
+    <p class="topLeft"><a href="eiffel-tower.html" style="font-size: 24px; color: red; text-decoration: underline;">Back</a></p>
+    <h4 onclick="toggleDropdown('dropdown)"><u>Main Principles</u></h4>
+    <div id="dropdown" class="dropdown-content" onclick="toggleDropdown('dropdown')">
+        <p>Unlike automatic systems, autonomous machines are self-sufficient and require no human intervention. They can learn and adjust to their changing environment.
+
+		Artificial intelligence and machine learning are the branches of computer science that are used in the development of autonomous machines.</p>
+		<h1> Artificial Intelligence </h1>
+		<p>AI is often used to perform a task that would usually require human intelligence (as opposed to mechanical processes, such as lifting or motion). The problem here is how you define 'intelligence'.
+
+One way you can decide on the intelligence of the system is to decide how far removed the original programmer is from the output. For example, if a program is following a set of 'if…then' rules, you could say that it is not very artificially intelligent, because the programmer has directly created the rules that determine which inputs should give particular outputs. However, if the program has studied a data set and used this to compile its own set of rules, you can consider it to possess some artificial intelligence, as the programmer had much less control over the final output.</p>
+		<p>
+		In a separate initiative, a team is developing a system of drones 
+		that can carry resuscitation (CPR) equipment and communication technology 
+		to heart attack patients. An ambulance will not be required to deliver the 
+		CPR equipment. Drones can navigate through available airspace, meaning that
+		they will not be caught in traffic jams, and they do not require a human pilot.
+		This initiative has the potential to increase the speed and lower the cost 
+		of every delivery of CPR equipment. If the same amount of money spent on 
+		delivering CPR equipment by ambulance over a year is spent on drone
+		deliveries, the number of drone deliveries can potentially increase too.</p>
+		<h2> Machine Learning </h2>
+		<p>Machine learning is a way of using large data sets (sometimes referred to as Big Data) to train AI by analysing the data in order to make more accurate predictions about what to output for a particular input. For example, a navigation system can be improved over time by having the system feed data back in to help it plan better routes to avoid congestion. The data that is fed back to the navigation system may include actual travel time, the speed travelled on each road, or the number of vehicles on the same route.</p>
+
+	</div>
+	
+	
+    <h4 onclick="toggleDropdown('dropdown2)"><u>Examples</u></h4>
+    <div id="dropdown2" class="dropdown-content" onclick="toggleDropdown('dropdown2')">
+			
+		<h3> Self-Driving Cars</h3>
+		
+		<p> Driverless cars will be able to communicate with each other and use data from their environment to reduce accidents and make traffic jams a thing of the past. However, there are several examples of accidents that have been caused by decisions made by autonomous cars. Sometimes this is because insufficient training data has been used. It is difficult to produce adequate conditions that the cars can use to determine what they should consider to be a hazard.
+
+When accidents happen, there are ethical questions related to accountability. Who is responsible in such a situation? The driver has relied on the (imperfect) system. Should they take responsibility, because they should have had oversight of the decision that the machine makes and be prepared to overrule it? Maybe the manufacturer is at fault, or the developer of the code that 'trains' the system used by the car.</p>
+    
+	
+	
+	</div>
+	<script>
+        function toggleDropdown(dropDownID) {
+            var dropdown = document.getElementById(dropDownID);
+            dropdown.classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>
