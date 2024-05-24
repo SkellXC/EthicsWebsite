@@ -22,7 +22,7 @@ The "Laws and Ethics in IT" website covers a range of topics including:
 - Ethical considerations in software development
 - The impact of IT on society
 
-The website is open source and hosted on GitHub, making it easy for others to contribute and improve the content.
+The website is open source and hosted on GitHub.
 
 ## Features
 
